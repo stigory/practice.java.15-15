@@ -11,14 +11,13 @@ public class Main {
         return min;
     }
     private static float convertHoursToDegree(int min, int hrs){
-        System.out.println("Принятое значение мин. " + min);
+        //System.out.println("Принятое значение мин. " + min);
 
         float degree;
 
         if ( hrs > 12 ) {
             hrs = hrs - 12;
-            System.out.println("Приводим время к 12-часовому формату");
-            System.out.println(hrs);
+            System.out.println("Приводим время к 12-часовому формату: " + hrs);
         }
 
         if ( hrs == 12 ) {
