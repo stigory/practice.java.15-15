@@ -15,7 +15,6 @@ public class Main {
 
         float degree;
 
-
         if ( hrs > 12 ) {
             hrs = hrs - 12;
             System.out.println("Приводим время к 12-часовому формату");
@@ -40,11 +39,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Введите часы");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String name = reader.readLine();
-        int hours = Integer.parseInt(name);
+        String inputString = reader.readLine();
+        int hours = Integer.parseInt(inputString);
         System.out.println("Введите минуты");
-        name = reader.readLine();
-        int minutes = Integer.parseInt(name);
+        inputString = reader.readLine();
+        int minutes = Integer.parseInt(inputString);
         System.out.println("Введенное время: "+hours+" ч. "+minutes+" мин.");
 
         float hrsDegree = convertHoursToDegree(minutes, hours);
